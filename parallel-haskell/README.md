@@ -5,6 +5,6 @@ Docker image with Haskell libraries for parallel programming:
 * parallel-3.2.0.6, and
 * repa-3.3.1.2.
 
-The library versions are based on LTS Haskell 1.4.
+The current library versions are based on LTS Haskell 1.4 with GHC 7.8.4.
 
-Available from the public Docker registry as 'mchakravarty/parallel-haskell'.
+Available from the public Docker registry as 'mchakravarty/parallel-haskell:lts-1.4'.
