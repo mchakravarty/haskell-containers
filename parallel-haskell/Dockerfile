@@ -14,5 +14,3 @@ ENV PKGS accelerate accelerate-io-0.15.0.0 \
 RUN    cabal update \
     && curl -LS http://www.stackage.org/snapshot/lts-1.4/cabal.config?global=true >>/root/.cabal/config \
     && cabal install $PKGS
-
-CMD ["ghci"]
