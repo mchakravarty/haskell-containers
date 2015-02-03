@@ -22,4 +22,4 @@ RUN    curl -LS http://developer.download.nvidia.com/compute/cuda/6_5/rel/instal
     && rm -rf mainland-pretty-mainland-pretty-0.2.8-mchakravarty \
     && cabal install $PKGS
 
-ENV PATH=/usr/local/cuda/bin:$PATH
+ENV PATH /usr/local/cuda/bin:$PATH
