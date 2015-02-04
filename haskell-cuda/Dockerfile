@@ -10,7 +10,7 @@ ENV PKGS accelerate-cuda-0.15.0.0 accelerate-fft-0.15.0.0
 #        provided
 
 RUN    apt-get update \
-    && apt-get install -y g++ \
+    && apt-get install -y --no-install-recommends g++ \
     && curl -LS http://developer.download.nvidia.com/compute/cuda/6_5/rel/installers/cuda_6.5.14_linux_64.run >cuda.run \
     && /bin/sh cuda.run --extract=`pwd` \
     && ./NVIDIA-Linux-x86_64-340.29.run -s -N --no-kernel-module \

@@ -5,7 +5,7 @@ FROM ubuntu:14.04
 MAINTAINER Manuel M T Chakravarty <chak@justtesting.org>
 
 # Grab required Ubuntu packages
-RUN apt-get update && apt-get install -y make curl xz-utils libgmp-dev libz-dev libtinfo-dev
+RUN apt-get update && apt-get install -y --no-install-recommends make curl xz-utils libgmp-dev libz-dev libtinfo-dev
 
 WORKDIR /usr/src
 
