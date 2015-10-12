@@ -5,7 +5,9 @@ FROM mchakravarty/ghc-7.10.2:latest
 MAINTAINER Manuel M T Chakravarty <chak@justtesting.org>
 
 # For packages in LTS, we give no version number, as that is fixed by LTS.
-ENV PKGS accelerate accelerate-io-0.15.1.0 \
+#ENV PKGS accelerate accelerate-io-0.15.1.0 \
+#  There is no accelerate-io-0.15.1.0 yet
+ENV PKGS accelerate accelerate-io-0.15.0.0 \
          linear-accelerate \
          monad-par monad-par-extras \
          parallel \
